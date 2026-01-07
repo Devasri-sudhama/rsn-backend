@@ -57,7 +57,7 @@ transporter.verify((error) => {
 // ===============================
 // API ROUTE
 // ===============================
-app.post('/api/careers/apply', upload.single('resume'), async (req, res) => {
+app.post('api/careers/apply', upload.single('resume'), async (req, res) => {
     try {
         console.log('📩 FORM DATA:', req.body);
         console.log('📎 FILE:', req.file);
@@ -226,7 +226,7 @@ app.post('/api/careers/apply', upload.single('resume'), async (req, res) => {
         });
     }
 });
-app.post('/api/contact', async (req, res) => {
+app.post('api/contact', async (req, res) => {
     try {
         console.log('📩 CONTACT FORM RECEIVED:', req.body);
 
